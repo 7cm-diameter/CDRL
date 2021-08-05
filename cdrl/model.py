@@ -1,5 +1,4 @@
 from abc import ABCMeta, abstractmethod
-from typing import Tuple
 
 import numpy as np
 from numpy import typing as npt
@@ -7,11 +6,6 @@ from scipy.stats import beta
 
 ArrayInt = npt.NDArray[np.int_]
 ArrayFloat = npt.NDArray[np.float_]
-
-x = np.array([[0], [1]])
-y = np.array([1, 2])
-y * x
-x * y
 
 
 def to_onehot(i: int, n: int) -> ArrayInt:
